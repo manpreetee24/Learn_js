@@ -28,7 +28,7 @@
 // let newDate = new Date()
 // console.log (newDate) ;
 // console.log((newDate.getMonth() + 1)); //using +1 to manually start months from 1 making user understand easy
-// console.log(newDate.getDay()); // wil tell week day
+// console.log(newDate.getDay()); // will tell week day
 
 // // console.log('${newDate.getDay()} and month ${newDate.getMonth() + 1}`);
 
