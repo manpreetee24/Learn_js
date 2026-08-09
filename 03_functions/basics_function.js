@@ -22,7 +22,7 @@ client("manpreet")
 client()  // in this case default value of name will be printed
 
 //rest operator
-function shoppingCart(num1, num2, ...num3){
+function shoppingCart(num1, num2, ...num3){  //... works as rest operator here not spread ie how these dots work depends on their usage area
     console.log(num1)
     console.log(num2)
     // console.log(num3) give same result as next statement
