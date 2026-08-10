@@ -30,7 +30,12 @@ switch (month) {  //month is the key which is to be compared in each case
     case 10:
         console.log("october")
         break;
-
+    case 12:
+        console.log("november")
+        break;
+    case 12:
+        console.log("december")
+        break;
     default:
         console.log("default case")
         break;
