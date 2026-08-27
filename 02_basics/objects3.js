@@ -5,7 +5,7 @@ const obj1 = {
     courseTaken : "Enc"
 }
 const {courseTaken: course} = obj1
-console.log(course)  //ne need to use obj1.courseTaken evertime to access it
+console.log(course)  //no need to use obj1.courseTaken evertime to access it
 
 //objects and arrays in json format used in API
 

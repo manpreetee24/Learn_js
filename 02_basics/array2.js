@@ -16,8 +16,8 @@ const bhassad = [23, 4, 1, [345], 6, 7, 8, [2, 5, 9,[3, 5]]]
 const simple = bhassad.flat(Infinity)  //flat will convert it in single array without any subarray
 console.log(simple)
 
-console. log(Array. isArray("Hitesh"))  //false
-console. log(Array. from("Hitesh") )
+console. log(Array. isArray("Hitesh"))  //false - as hitesh is not sn array
+console. log(Array. from("Hitesh") )   //[ 'H', 'i', 't', 'e', 's', 'h' ]
 console. log(Array. from( {name: "hitesh"})) // interesting it will give an empty string coz we didnt mentioned that whether to make array of key or value  
 
 let score1 = 100

@@ -6,8 +6,8 @@ const userInfo = {
         }
     }
 }
-// console.log(userInfo)
-// console.log(userInfo.name.completeName.firstName)
+ console.log(userInfo)   //{ name: { completeName: { firstName: 'Manpreet', lastName: 'Dhiman' } }}
+ console.log(userInfo.name.completeName.firstName)  //Manpreet
 
 const obj1 ={1: 'a', 2 : 's', 3:'g'} //storing key value pairs in obj1
 const obj2 = { 4: 'r', 5:'y'}
@@ -43,4 +43,4 @@ const arrOfObj = [
     {name : "rozy", roll : 24},
     {name : "simran", roll : 28}
 ]
-console.log(arrOfObj[1].roll)
+console.log(arrOfObj[1].roll)   //24

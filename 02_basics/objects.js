@@ -1,5 +1,5 @@
 //objects as constructors are singleton
-//objects as literals anre not singleton
+//objects as literals are not singleton
 
 //objects as literals
 
@@ -17,7 +17,7 @@ console.log(user1.name) //m1
 console.log(user1["surname"]) //m2
 console.log(user1["isLoggedIn"])
 console.log(user1.age)
-console.log(user1[mySym])
+console.log(user1[mySym])  //m3
 console.log(user1.lastLoggedIn)
 
 user1.age = 20 //values can be changed by using = sign
