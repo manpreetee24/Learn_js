@@ -34,4 +34,5 @@ const myFunction = function(){
     console.log("hii, this is my function")
 }
 console.log(typeof myFunction) //function type
-
+console.log(typeof myFunction())   //hii, this is my function
+//undefined

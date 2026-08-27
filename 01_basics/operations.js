@@ -18,10 +18,10 @@ console.log(1 + 2+ "3")//33
 console.log("1" + 2+ 3)//123
 
 
-console.log(3+4 *6 /2) //15
-console.log(-true)//1
+console.log(3+4 *6 /2) //15  - bodmas
+console.log(-true)//1   //-1
 // console.log(true+)  //error
-console.log(+"")
+console.log(+"") //0
 
 let marks = 25
 marks++

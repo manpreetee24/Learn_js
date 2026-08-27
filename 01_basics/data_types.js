@@ -7,6 +7,7 @@ console.log(name)
 console.log(age)
 console.log(isLoggedIn)
 
+//typeof operator returns a string indicating the type of the operand's value.
 console.log(typeof "mannu") // string type
 console.log(typeof age)  //number type , for larger values 2 power 53 use bigint
 console.log(typeof isLoggedIn) //boolean type

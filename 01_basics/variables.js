@@ -9,8 +9,8 @@ name = "manprit"
 course = "Btech Enc"
 cgpa = 9.8
 city = "hisar"
-// rollNo = 24001015038
-// console.log(rollNo)
+//rollNo = 24001015038  -  TypeError: Assignment to constant variable.
+//console.log(rollNo)
 
 console.table([rollNo, name, course, cgpa, city])
 

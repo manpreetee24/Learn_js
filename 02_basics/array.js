@@ -1,5 +1,8 @@
 const myArr = [3, 5, 7, "hema", true] //m1 to declare arrays
-console.log(myArr[3])
+console.log(myArr[3])   //hema
+console.log(typeof myArr)  //object
+myArr.push(45)
+console.log(myArr)
 
 const myArr2 = new Array(2, 5, "hina", 7, false) //m2 to declare arrays
 console.log(myArr2[2])

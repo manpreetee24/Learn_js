@@ -14,7 +14,7 @@ console.log(gameName)
 console.log(gameName[0]) //m1 to access individual char in a string
 console.log(gameName.charAt(2))// m2 to access individual char in a string
 
-console.log(gameName.__proto__) //object type
+console.log(gameName.__proto__) //object type -  {}
 
 console.log(gameName.length)
 
@@ -22,7 +22,7 @@ console.log(gameName.toUpperCase())
 
 console.log(gameName.indexOf('d'))
 
-console.log(gameName.split('-'))
+console.log(gameName.split('-'))   //[ 'mannu', 'dhiman', 'ladsahab' ]
 
 const newString = gameName.substring(0,4) //4th index value will not be included in newString
 console.log(newString)
@@ -36,4 +36,4 @@ console.log(stringWithSpaces.trim())
 
 const url = "https://website.mannu%20.google.com"
 console.log(url.replace('%20', '-'))
-console.log(url.includes('sundar'))
+console.log(url.includes('sundar'))  //false
