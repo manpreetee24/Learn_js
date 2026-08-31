@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">JAVASCRIPT is my fav language <span>css also </span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laudantium consequuntur nam.</p>
+        <input type="password" name="mannu" id="password-input">
+        <ul>
+            <li class="li-item">item 1</li>
+            <li class="li-item">item 2</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+<!-- let title = document.getElementById("title");
+title.style.padding = "20px";
+title.textContent gives the text content of the element with the id "title". In this case, it will return "JAVASCRIPT is my fav language css also ".
+title.innerText gives the visible text content of the element with the id "title". In this case, it will also return "JAVASCRIPT is my fav language css also ".
+title.innerHTML gives the HTML content of the element with the id "title". In this case, it will return "JAVASCRIPT is my fav language <span>css also </span>". -->
+
+<!-- document.getElementsByClassName("heading") gives a collection of all elements with the class "heading". -->
+
+<!-- querySelector and querySelectorAll -->
+ <!-- same ways to use it as we use css -->
+
+<!-- document.querySelector("#title") gives the first element with the id "title". -->
+<!-- document.querySelectorAll(".heading") gives a collection of all elements with the class "heading". -->
+
+ <!-- document.querySelector("input[type='password']") gives the first element with the id "password-input". -->
+
+<!-- document.querySelector('ul')     gives the first element with the tag "ul". -->
+
+<!-- document.querySelector('li')     gives the first element with the tag "li". -->
+
+<!-- document.querySelectorAll('li')    
+gives a collection of all elements(not array but similiar to array) with the tag "li".
+const mylist = document.querySelectorAll('li')
+mylist[0].style.color = "red"; // Example: change the color of the first list item
+here mylist is a NodeList, which is similar to an array but not exactly the same. You can access elements in a NodeList using index notation (e.g., mylist[0]) and apply styles or perform other operations on them.
+on this node list we can apply forEach method to iterate over each element and perform actions on them.
+-->
+
+ <!--const myUL =  document.querySelector('ul') 
+myUL.style.backgroundColor = "lightgray"; -->
+
+
+<!-- document.getElementsByClassName("li-item")  gives HTMLCollection of all elements with the class "li-item". -->
+<!-- these HTMLcollection and node list are not arrays so maps cannot be used directly on them 
+ we need to convert them to arrays first using
+Array.from(document.getElementsByClassName("li-item"))       "use capital A"-->

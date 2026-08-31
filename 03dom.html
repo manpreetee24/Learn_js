@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="main">
+    
+</body>
+<script>
+//how to create a new element and add it to the DOM
+//now you can use loop to create multiple elements and add them to the DOM
+
+    const div = document.createElement("div");  //a div created in memory
+    console.log(div); // <div></div>
+    div.className = "parent"; // class name added to the divd
+    div.id = Math.floor(Math.random()*1000); // random id added to the div
+    div.innerHTML = "<h1>hello world</h1>"; // inner html added
+    div.style.backgroundColor = "lightgray"; // style added to the div
+    div.setAttribute("title", "this is a div"); // attribute added to the div  recommended method to set attributes to a elemnent
+    document.body.appendChild(div); // div added to the body of the document
+    console.log(div); // <div class="parent" id="random_number" title="this is a div">
+</script>
+</html>

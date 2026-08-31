@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLang (lang){
+        const li = document.createElement("li");
+        li.innerHTML = `${lang}`;
+        document.querySelector(".language").appendChild(li);
+    }
+    addLang("Python");  //in this function we need to traverse the DOM to find the ul element 
+    //and then add the li element to it. This is not an optimized way to do it because we are
+    //  traversing the DOM every time we call the function. We can optimize this by passing the
+    //  ul element as a parameter to the function and then adding the li element to it. This way we don't have to traverse the DOM every time we call the function.
+
+    function addOptimized (lang){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(lang));
+        document.querySelector(".language").appendChild(li); 
+    }
+    addOptimized("C++");  //in this function we are using appendChild to add the li element to the ul element.
+    // This is a more optimized way to do it because we are not traversing the DOM every time we call the function. 
+    // We are just appending the li element to the ul element.
+
+
+    //innerHTML forces the browser's HTML parser to stop, tokenize, and build a full DOM tree, 
+    // which is heavy for a simple text string. 
+    // createTextNode directly creates a text node without invoking the HTML parser.
+
+
+    //edit
+    const secLang = document.querySelector("li:nth-child(2)");
+    secLang.innerHTML = "C#";  //this is not a good practice because we are using innerHTML to change the text of the li element.
+    
+    const thirdLang = document.querySelector("li:nth-child(3)");
+    const newLi = document.createElement("li");
+    newLi.textContent = "Java";  //this is a good practice because we are using textContent to change the text of the li element.
+    thirdLang.replaceWith(newLi);  //this is a good practice because we are using replaceWith to replace the li element with the new li element.
+
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>HTML</li>";  //this is a good practice because we are using outerHTML to change the text of the li element.
+
+    //delete
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();  //this is a good practice because we are using remove to delete the li element.
+</script>
+</html>

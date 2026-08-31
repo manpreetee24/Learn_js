@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document DOM</title>
+    <style>
+        .parent{
+            background-color: black;
+            color: white;
+        }
+        .main{
+            background-color: black;
+        }
+        .day{
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body class="main">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>    
+</body>
+<!-- script content is visible in console window in browser -->
+<script>   
+    const parent = document.querySelector(".parent");
+    const days = document.querySelectorAll(".day");
+    // console.log(parent);
+    // console.log(days[0]);
+    // console.log(parent.children);
+    // console.log(parent.children[0].innerHTML);
+
+    // console.log(parent.firstElementChild.innerHTML);
+    // console.log(parent.lastElementChild.innerHTML);
+
+    // for(let i=0; i<parent.children.length; i++){
+    //     parent.children[i].style.backgroundColor = "pink";
+    //     parent.children[i].style.color = "black";
+    //     console.log(parent.children[i].innerHTML);
+    // }
+
+    // moving from child to parent
+//     const dayOne = document.querySelector(".day");
+//     console.log(dayOne.parentElement);
+//     console.log(dayOne.parentElement.parentElement);
+ 
+// // moving from child to sibling   
+//     console.log(dayOne.nextElementSibling); // tuesday
+//     console.log(dayOne.nextElementSibling.nextElementSibling); // wednesday
+//     console.log(dayOne.previousElementSibling); // null because it is the first child
+
+
+console.log(parent.childNodes); // gives all the child nodes including text nodes
+//childNodes is a nodelist where enter key is also considered as a text node so it will be included in the childNodes list
+//comment is also as a comment node so it will be included in the childNodes list 
+
+console.log(parent.children); // gives only the child elements excluding text nodes
+</script>
+</html>
